@@ -1,22 +1,6 @@
-import { Box, CheckboxProps, Theme } from "@mui/material";
+import { Box, Theme } from "@mui/material";
 
-interface CheckboxSizeProps {
-  size: number;
-  fontSize: number;
-  position: number;
-}
-
-function getSizeStyle(size?: CheckboxProps["size"]): CheckboxSizeProps {
-  switch (size) {
-    case "small":
-      return { size: 16, fontSize: 1, position: 1 };
-    case "medium":
-    default:
-      return { size: 20, fontSize: 1.35, position: 2 };
-  }
-}
-
-function checkboxStyle(size?: CheckboxProps["size"]) {
+function checkboxStyle() {
   return {
     "& .icon": {
       width: 20,
@@ -58,12 +42,7 @@ export default function Checkbox(theme: Theme) {
             color: palette.secondary.main,
           },
           color: palette.secondary.dark,
-          "&.size-small": {
-            ...checkboxStyle("small"),
-          },
-          "&.size-medium": {
-            ...checkboxStyle("medium"),
-          },
+          ...checkboxStyle(),
         },
       },
     },

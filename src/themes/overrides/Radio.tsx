@@ -8,87 +8,36 @@ import {
   SliderProps,
 } from "@mui/material";
 
-// project import
-// import getColors from "utils/getColors";
+// // project import
+// // import getColors from "utils/getColors";
 
-// types
-export type ButtonVariantProps =
-  | "contained"
-  | "light"
-  | "outlined"
-  | "dashed"
-  | "text"
-  | "shadow";
-export type IconButtonShapeProps = "rounded" | "square";
-type TooltipColor =
-  | "primary"
-  | "secondary"
-  | "info"
-  | "success"
-  | "warning"
-  | "error"
-  | "default";
-export type ColorProps =
-  | ChipProps["color"]
-  | ButtonProps["color"]
-  | IconButtonProps["color"]
-  | SliderProps["color"]
-  | TooltipColor;
-export type ExtendedStyleProps = {
-  color: ColorProps;
-  theme: Theme;
-};
-
-// ==============================|| RADIO - COLORS ||============================== //
-
-function getColorStyle({ color, theme }: ExtendedStyleProps) {
-  return {
-    "&:hover": {
-      backgroundColor: "#212121",
-    },
-    "&.Mui-focusVisible": {
-      outline: `2px solid black`,
-      outlineOffset: -4,
-    },
-  };
-}
-
-// ==============================|| CHECKBOX - SIZE STYLE ||============================== //
-
-interface RadioSizeProps {
-  size: number;
-  dotSize: number;
-  position: number;
-}
-
-function getSizeStyle(size?: CheckboxProps["size"]): RadioSizeProps {
-  switch (size) {
-    case "small":
-      return { size: 16, dotSize: 14, position: 0 };
-    case "medium":
-    default:
-      return { size: 20, dotSize: 10, position: 0 };
-  }
-}
-
-// ==============================|| CHECKBOX - STYLE ||============================== //
-
-function radioStyle(size?: CheckboxProps["size"]) {
-  const sizes: RadioSizeProps = getSizeStyle(size);
-
-  return {
-    "& .icon": {
-      width: sizes.size,
-      height: sizes.size,
-      "& .dot": {
-        width: sizes.dotSize,
-        height: sizes.dotSize,
-      },
-    },
-  };
-}
-
-// ==============================|| OVERRIDES - CHECKBOX ||============================== //
+// // types
+// export type ButtonVariantProps =
+//   | "contained"
+//   | "light"
+//   | "outlined"
+//   | "dashed"
+//   | "text"
+//   | "shadow";
+// export type IconButtonShapeProps = "rounded" | "square";
+// type TooltipColor =
+//   | "primary"
+//   | "secondary"
+//   | "info"
+//   | "success"
+//   | "warning"
+//   | "error"
+//   | "default";
+// export type ColorProps =
+//   | ChipProps["color"]
+//   | ButtonProps["color"]
+//   | IconButtonProps["color"]
+//   | SliderProps["color"]
+//   | TooltipColor;
+// export type ExtendedStyleProps = {
+//   color: ColorProps;
+//   theme: Theme;
+// };
 
 export default function Radio(theme: Theme) {
   const { palette } = theme;

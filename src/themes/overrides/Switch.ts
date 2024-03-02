@@ -47,8 +47,6 @@ function switchStyle(theme: Theme, size?: SwitchProps["size"]) {
   };
 }
 
-// ==============================|| OVERRIDES - TAB ||============================== //
-
 const toggleRing = "#F2EBDB";
 const lightBorder = "#AFC6BD";
 
@@ -63,7 +61,8 @@ export default function Switch(theme: Theme) {
           boxSizing: "border-box",
           border: "1px solid",
           borderColor: lightBorder,
-          boxShadow: "0px",
+          boxShadow:
+            " 0px 1.0254120826721191px 6.836080551147461px 0px #00000026 inset",
         },
         thumb: {
           borderRadius: "50%",

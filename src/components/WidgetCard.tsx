@@ -11,6 +11,7 @@ import {
   Checkbox,
   Radio,
   RadioGroup,
+  Stack,
   Switch,
   Tooltip,
   Typography,
@@ -69,7 +70,7 @@ export const WidgetCard = ({ widget }: { widget: Widget }) => {
   };
 
   return (
-    <div
+    <Stack
       style={{
         width: "221px",
         display: "flex",
@@ -136,7 +137,14 @@ export const WidgetCard = ({ widget }: { widget: Widget }) => {
             title={
               <>
                 <p>{tooltipString}</p>
-                <a href={"/"}>View profile</a>
+                <a
+                  target={"_blank"}
+                  href={
+                    "https://join.com/companies/getmads/10664571-senior-frontend-engineer"
+                  }
+                >
+                  View profile
+                </a>
               </>
             }
           >
@@ -241,6 +249,6 @@ export const WidgetCard = ({ widget }: { widget: Widget }) => {
         </Typography>
         <Switch checked={!!widget.active} onClick={handleActiveClick} />
       </Box>
-    </div>
+    </Stack>
   );
 };
