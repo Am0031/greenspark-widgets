@@ -157,15 +157,7 @@ export default function Radio(theme: Theme) {
       styleOverrides: {
         root: {
           padding: 0,
-          // "&.size-small": {
-          //   ...radioStyle("small"),
-          // },
-          // "&.size-medium": {
-          //   ...radioStyle("medium"),
-          // },
         },
-        // colorPrimary: getColorStyle({ color: "primary", theme }),
-        // colorSecondary: getColorStyle({ color: "secondary", theme }),
       },
     },
   };

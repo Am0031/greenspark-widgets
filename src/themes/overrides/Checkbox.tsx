@@ -17,16 +17,15 @@ function getSizeStyle(size?: CheckboxProps["size"]): CheckboxSizeProps {
 }
 
 function checkboxStyle(size?: CheckboxProps["size"]) {
-  const sizes: CheckboxSizeProps = getSizeStyle(size);
-
   return {
     "& .icon": {
-      width: sizes.size,
-      height: sizes.size,
+      width: 20,
+      height: 20,
+      margin: "2px",
       "& .filled": {
-        fontSize: `${sizes.fontSize}rem`,
-        top: -sizes.position,
-        left: -sizes.position,
+        fontSize: `${1.35}rem`,
+        top: -2,
+        left: -2,
       },
     },
   };
@@ -37,16 +36,17 @@ export default function Checkbox(theme: Theme) {
   return {
     MuiCheckbox: {
       defaultProps: {
-        className: "size-small",
+        className: "size-medium",
         icon: (
           <Box
             className="icon"
             sx={{
-              width: 32,
-              height: 32,
+              width: 34,
+              height: 34,
               border: "2px solid",
               borderColor: "inherit",
               borderRadius: 0.25,
+              boxSizing: "border-box",
             }}
           />
         ),
