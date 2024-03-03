@@ -20,6 +20,7 @@ export const BadgeColour = ({
     const isChecked = colours[selected] === item;
     return {
       checked: isChecked,
+      onClick: handleColourChange,
       onChange: handleColourChange,
       value: item,
       name: "color-radio-button-demo",
@@ -64,6 +65,7 @@ export const BadgeColour = ({
       <Box display={"flex"} flexDirection={"row"} gap={"4px"}>
         {Object.entries(colours).map(([key, value]) => (
           <Radio
+            data-testid={`colour-${key}`}
             key={key}
             {...controlProps(value)}
             icon={<UncheckedIcon color={value} />}

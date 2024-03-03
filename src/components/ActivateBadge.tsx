@@ -19,7 +19,11 @@ export const ActivateBadge = ({
       <Typography style={{ color: theme.palette.primary.main }}>
         Activate badge
       </Typography>
-      <Switch checked={!!active} onClick={handleActiveClick} />
+      <Switch
+        data-testid={"active-switch"}
+        checked={!!active}
+        onClick={handleActiveClick}
+      />
     </Box>
   );
 };
