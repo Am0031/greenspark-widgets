@@ -31,7 +31,7 @@ export const BadgeColour = ({
   const UncheckedIcon = ({ color }: { color: string }) => (
     <Box sx={{ width: "16px", height: "16px", border: `2px solid ${color}` }}>
       <Box
-        sx={{ width: "12px", height: "12px", backgroundColor: `${color}` }}
+        sx={{ width: "100%", height: "100%", backgroundColor: `${color}` }}
       ></Box>
     </Box>
   );
@@ -45,7 +45,7 @@ export const BadgeColour = ({
       }}
     >
       <Box
-        sx={{ width: "12px", height: "12px", backgroundColor: `${color}` }}
+        sx={{ width: "100%", height: "100%", backgroundColor: `${color}` }}
       ></Box>
     </Box>
   );
