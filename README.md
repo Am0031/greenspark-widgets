@@ -65,7 +65,7 @@ Text font and contrasting logo on light background colours
 
 ![widgetCard-header](image-6.png)
 
-Widgets:
+Overall view of widgets:
 
 ![widgets-page](image.png)
 
