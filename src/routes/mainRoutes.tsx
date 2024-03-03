@@ -1,4 +1,5 @@
 import MainLayout from "../layouts/MainLayout";
+import { NotFound } from "../pages/NotFound";
 import { Widgets } from "../pages/Widgets";
 
 export const MainRoutes = {
@@ -17,3 +18,5 @@ export const MainRoutes = {
     //other paths for future extensions
   ],
 };
+
+export const FallbackRoute = { path: "*", element: <NotFound /> };
