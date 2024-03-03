@@ -42,7 +42,7 @@ export default function ThemeCustomization({
       },
       palette: theme.palette,
     }),
-    []
+    [theme.palette]
   );
 
   const themes: Theme = createTheme(themeOptions);
