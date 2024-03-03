@@ -51,9 +51,11 @@ The widget card displays the information about 1 widget and also allows the user
 
 ## Mobile-first design
 
-The widgets page and its components are set up with the relevant properties so that they display as a column on small screens.
+The widgets page and its components are set up with the relevant styling so that they display as a column on small screens, and align in a row on larger screens.
 
 ![widgets-mobile](image-1.png)
+
+![widgets-desktop](image-3.png)
 
 ## Testing
 
