@@ -55,10 +55,18 @@ The widgets page and its components are set up with the relevant properties so t
 
 ![widgets-mobile](image-1.png)
 
+## Testing
+
+The project is set up to test with jest and react-testing library. A test folder has been created and a few tests set up for a couple of components as a starting point to testing the page fully.
+
+Using the instruction `npm test` in the terminal will run the tests and the response should look like this:
+
+![widgets-components-tests](image-2.png)
+
 ## Limitations and further development
 
 Due to the task being a coding challenge, its development is limited in context and time, but further aspects could be explored further and improved for completeness:
 
-- further styling of the switch component
-- add unit testing of all components
-- add storybook to the repo and add visual, accessibility and interaction testing
+- further styling of the page, including styling of the switch component
+- add further unit testing for all components
+- add storybook to the repo and add visual and accessibility testing
