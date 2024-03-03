@@ -55,19 +55,19 @@ When integrating the design aspects, we can note that the widget cards have a re
 
 Checkbox checked colour and hover colour
 
-![checkbox-customised](image-4.png)
+![checkbox-customised](./screenshots/image-4.png)
 
 Toggle colour and borders and hover colour
 
-![toggle-customised](image-5.png)
+![toggle-customised](./screenshots/image-5.png)
 
 Text font and contrasting logo on light background colours
 
-![widgetCard-header](image-6.png)
+![widgetCard-header](./screenshots/image-6.png)
 
 Overall view of widgets:
 
-![widgets-page](image.png)
+![widgets-page](./screenshots/image.png)
 
 ## Current capabilities of the app
 
@@ -84,9 +84,9 @@ The card uses MUI components such as Radio, CheckBox and Switch components. Over
 
 The widgets page and its components are set up with the relevant styling so that they wrap into a column on small screens, and align in a row on larger screens.
 
-![widgets-mobile](image-1.png)
+![widgets-mobile](./screenshots/image-1.png)
 
-![widgets-desktop](image-3.png)
+![widgets-desktop](./screenshots/image-3.png)
 
 ## Testing
 
@@ -94,7 +94,7 @@ The project is set up to test with jest and react-testing library. The test fold
 
 Using the instruction `npm test` in the terminal will run the tests and the response should look like this:
 
-![widgets-components-tests](image-2.png)
+![widgets-components-tests](./screenshots/image-2.png)
 
 ## Limitations and further development
 
