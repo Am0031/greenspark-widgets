@@ -1,7 +1,6 @@
 {
   "name": "greenspark-widgets",
   "version": "0.1.0",
-  "homepage": "https://am0031.github.io/greenspark-widgets/",
   "private": true,
   "dependencies": {
     "@ant-design/colors": "^7.0.2",
@@ -33,9 +32,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest tests/",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
