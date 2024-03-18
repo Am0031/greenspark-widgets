@@ -47,7 +47,7 @@ export const Widgets = () => {
               paddingBottom: "12px",
             }}
           >
-            Per products widgets
+            Per product widgets
           </Typography>
         </Box>
         <Box

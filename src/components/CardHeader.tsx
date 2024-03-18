@@ -46,13 +46,7 @@ export const CardHeader = ({ background, widget }: HeaderProps) => {
       >
         <Typography fontSize={"12px"}>This product {widget.action}</Typography>
 
-        <Typography
-          fontSize={"16px"}
-          fontWeight={700}
-          textOverflow={"hidden"}
-          display={"flex"}
-          flexWrap={"nowrap"}
-        >
+        <Typography fontSize={"17px"} fontWeight={600} whiteSpace={"nowrap"}>
           {widget.amount} {widget.type}
         </Typography>
       </Box>
