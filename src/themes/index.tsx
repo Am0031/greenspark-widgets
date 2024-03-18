@@ -23,6 +23,9 @@ export default function ThemeCustomization({
 
   const themeOptions: ThemeOptions = useMemo(
     () => ({
+      typography: {
+        fontFamily: `"Cabin","Roboto", "Helvetica", "Arial", sans-serif`,
+      },
       breakpoints: {
         values: {
           xs: 0,

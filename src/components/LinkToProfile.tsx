@@ -24,7 +24,7 @@ export const LinkToProfile = ({
     >
       <Box display={"flex"} flexDirection={"row"}>
         <Typography style={{ color: theme.palette.primary.main }}>
-          Link to public profile
+          Link to Public Profile
         </Typography>
         <Tooltip
           title={
