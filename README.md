@@ -75,17 +75,21 @@ Component overrides are all set up in the theme/overrides folder, where we have 
 
 Below is a target view of the components:
 
-Checkbox checked colour and hover colour
+Checkbox - border, checked colour and hover colour
 
 ![checkbox-customised](./screenshots/image-4.png)
 
-Toggle colour and borders and hover colour
+Toggle/Switch - colour, borders and hover colour
 
 ![toggle-customised](./screenshots/image-5.png)
 
-Text font and contrasting logo on light background colours
+Radio buttons - unchecked and checked shapes, border and hover colour
 
-![widgetCard-header](./screenshots/image-6.png)
+![radio-customised](./screenshots/image-7.png)
+
+Tooltip - colour, content style and box shadow
+
+![tooltip-customised](./screenshots/image-8.png)
 
 ## Current capabilities of the app
 
