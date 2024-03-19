@@ -1,4 +1,4 @@
-# Greenspark Widget app
+# MUI Components override app
 
 This project is a frontend coding task to show how to set up an MUI theme and override the styling of MUI components.
 
@@ -52,7 +52,10 @@ The page's functional requirements are as follow:
 
 ## MUI override
 
-The objective is to achieve building this page and using MUI components while respectiing the styling requirements in this [figma](https://www.figma.com/file/EpzAE594mkDkMvg09WTqpb/Frontend-task?type=design&node-id=8-35&mode=design&t=z7v0Cz5fJXtBL25L-0) design as best we can.
+The objective is to achieve building this page and using MUI components while respectiing the styling requirements in this overall layout:
+
+![widgets-page](./screenshots/image.png)
+
 When integrating the design aspects, we can note that the widget cards have a recurring main colour #3B755F which will be set as the app theme colour because texts and components behaviour are customised with this colour throughout, so this is set up as the primary.main colour in the app's palette in the theme.
 
 The components we will override are as follow:
@@ -67,8 +70,10 @@ All app-wide settings like breakpoints and font choices are applied at theme def
 Component overrides are all set up in the theme/overrides folder, where we have the following structure:
 
 - each component that needs an override has its own file which contains the override requirements
-- a main index.tsx file is set to import and export all the individual overrides
-- the
+- the file theme/overrides/index.tsx file merges the individual overrides and prepares it ready to be applied into the main theme
+- the override merge is applied to the theme in theme/index.tsx
+
+Below is a target view of the components:
 
 Checkbox checked colour and hover colour
 
@@ -81,10 +86,6 @@ Toggle colour and borders and hover colour
 Text font and contrasting logo on light background colours
 
 ![widgetCard-header](./screenshots/image-6.png)
-
-Overall view of widgets:
-
-![widgets-page](./screenshots/image.png)
 
 ## Current capabilities of the app
 
@@ -114,8 +115,8 @@ Using the instruction `npm test` in the terminal will run the tests and the resp
 
 ## Limitations and further development
 
-Due to the task being a coding challenge, its development is limited in context and time, but further aspects could be explored further and improved for completeness:
+Due to the task being an override example, its development is limited in context and time, but further aspects could be explored and improved for a more complete app:
 
-- further styling of the page, including styling of the switch component
-- add further unit testing for all components
-- add storybook to the repo and add visual and accessibility testing
+- further styling of the page, including override of additional components
+- further unit testing for all components
+- storybook added to the repo and adding visual and accessibility testing to the components
