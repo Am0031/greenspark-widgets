@@ -1,6 +1,6 @@
 # Greenspark Widget app
 
-This project is a frontend coding challenge for Greenspark. There was freedom to use any framework or library to build it so I personally chose ReactJS, TypeScript and Jest which are the language, framework and library I am most comfortable with currently.
+This project is a frontend coding task to show how to set up an MUI theme and override the styling of MUI components.
 
 ## Getting Started with this project
 
@@ -29,7 +29,7 @@ This project was built using:
 
 ## Structure of the project
 
-The project folder and general setup have been structured for possible extensions, with a folder split for:
+The project folder and general setup have been structured as a full app and open for possible extensions, with a folder split for:
 
 - routes and layout
 - redux store
@@ -41,17 +41,34 @@ The project folder and general setup have been structured for possible extension
 
 ## Widget page
 
-The widget page essentially contains a card with widget cards, and the user can interact with the cards to change their style, link a widget to their profile, and activate a widget.
+The widget page is our example page. It essentially contains a card with widget cards, and the user can interact with the cards to change their style, link a widget to their profile, and activate a widget.
 
-The functional requirements are as follow:
+The page's functional requirements are as follow:
 
 - As a user I want to see my product widgets.
 - As a user I want to customize my widgets by changing their colors, active state and
   whether it’s linked to my public profile (using client-side state management)
 - Only one widget can have the active state at a time
 
-The styling requirements are as per this [figma](https://www.figma.com/file/EpzAE594mkDkMvg09WTqpb/Frontend-task?type=design&node-id=8-35&mode=design&t=z7v0Cz5fJXtBL25L-0) design.
-When integrating the design aspects, we can note that the widget cards have a recurring main colour #3B755F which could be considered the app theme colour because texts and components behaviour are customised with this colour throughout, so this is set up as the primary.main colour in the app's palette in the theme.
+## MUI override
+
+The objective is to achieve building this page and using MUI components while respectiing the styling requirements in this [figma](https://www.figma.com/file/EpzAE594mkDkMvg09WTqpb/Frontend-task?type=design&node-id=8-35&mode=design&t=z7v0Cz5fJXtBL25L-0) design as best we can.
+When integrating the design aspects, we can note that the widget cards have a recurring main colour #3B755F which will be set as the app theme colour because texts and components behaviour are customised with this colour throughout, so this is set up as the primary.main colour in the app's palette in the theme.
+
+The components we will override are as follow:
+
+- checkbox (unchecked icon and checked icon, hover style)
+- radio buttons (unchecked icon and checked icon, hover style)
+- toggle/switch button (shape, colours in on and off states, hover)
+- tooltip (card style and content style)
+
+All app-wide settings like breakpoints and font choices are applied at theme definition level (in theme/index.tsx). The app-wide main colours are applied at palette definition (in theme/palette.tsx).
+
+Component overrides are all set up in the theme/overrides folder, where we have the following structure:
+
+- each component that needs an override has its own file which contains the override requirements
+- a main index.tsx file is set to import and export all the individual overrides
+- the
 
 Checkbox checked colour and hover colour
 
@@ -77,8 +94,7 @@ Retrieval of data is limited to widget information, but it is processed by the c
 
 The widgets page and its components are built using layout MUI components such as Stack or Box, and custom styling is applied via inline styling.
 
-The widget card displays the information about 1 widget and also allows the user to interact with it to change some widget properties. Changes are dispatch to the store using the dispatch function.
-The card uses MUI components such as Radio, CheckBox and Switch components. Overrides and custom props have been set up so that the components are styled according to the figma design.
+The widget card displays the information about 1 widget and also allows the user to interact with it to change some widget properties. Changes are dispatched to the store using the dispatch function.
 
 ## Mobile-first design
 
