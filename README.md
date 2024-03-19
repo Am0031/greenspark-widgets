@@ -52,13 +52,14 @@ The page's functional requirements are as follow:
 
 ## MUI override
 
-The objective is to achieve building this page and using MUI components while respectiing the styling requirements in this overall layout:
+The objective is to achieve building this page and using MUI components and theme while respecting the styling requirements in this overall layout:
 
 ![widgets-page](./screenshots/image.png)
 
-When integrating the design aspects, we can note that the widget cards have a recurring main colour #3B755F which will be set as the app theme colour because texts and components behaviour are customised with this colour throughout, so this is set up as the primary.main colour in the app's palette in the theme.
+To achieve this, we're using the MUI theme by wrapping our app with a `<ThemeCustomisation>` tag, which represents the theme created in theme/index.tsx. This theme includes all aspects such as colours, fonts, breakpoints and any other MUI override like components override.  
+The cards we are working with have a recurring main colour #3B755F as the app theme colour because texts and components behaviour are customised with this colour throughout, so this is set up as the primary.main colour in the app's palette in the theme.
 
-The components we will override are as follow:
+The components we need to override are as follow:
 
 - checkbox (unchecked icon and checked icon, hover style)
 - radio buttons (unchecked icon and checked icon, hover style)
@@ -73,7 +74,7 @@ Component overrides are all set up in the theme/overrides folder, where we have 
 - the file theme/overrides/index.tsx file merges the individual overrides and prepares it ready to be applied into the main theme
 - the override merge is applied to the theme in theme/index.tsx
 
-Below is a target view of the components:
+Below is a view of the target style for each component:
 
 Checkbox - border, checked colour and hover colour
 
